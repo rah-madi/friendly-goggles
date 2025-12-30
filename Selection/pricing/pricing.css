@@ -1,0 +1,98 @@
+.body{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+h1{
+  text-align: center;
+  font-weight: 600;
+  color: limegreen;
+}
+.pricing-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-width:600px;
+  border: 2px solid rgb(141, 216, 20);
+  border-radius: 10px;
+  justify-content: center;
+  margin: auto;
+  transition: transform 0.3s ease;
+  background-color: aquamarine;
+
+}
+
+.pricing-card{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px;
+  justify-content: space-between;
+  border: 2px solid rgb(117, 204, 17);
+  text-align: center;
+  padding: 20px;
+  margin: 10px 20px;
+  height: 400px;
+  background-color: rgb(226, 250, 242);
+  border-radius: 10px;
+}
+.pricing-card:hover{
+  transform: scale(1.05); 
+}
+
+.basic-plan{
+  order: 0;
+}
+.pro-plan{
+  order: 1;
+  flex-grow: 2;
+}
+.premium-plan{
+  order: 2;
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(28, 195, 120);
+    border-bottom: 1px solid olivedrab;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.pricing-card h2{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: rgb(18, 183, 73);
+}
+.feature{
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0;
+}
+.feature li{
+    padding: 3px;
+}
+.check{
+    color: rgb(14, 140, 41);
+    margin-right: 8px;
+
+}
+.cross{
+    color: crimson;
+    margin-right: 8px;
+}
+a  {
+    text-decoration:none;
+    border: 2px solid yellowgreen;
+    margin: 17px 0;
+    background-color: rgb(55, 174, 81);
+    color: rgb(9, 9, 9);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+}
+a:hover{
+    background-color: rgb(143, 214, 73);
+    color: aliceblue;
+}
