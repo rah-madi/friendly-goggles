@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     display: flex;
     flex-direction: column;
@@ -53,4 +54,61 @@ body{
 }
 h4{
     font-size: 1.3rem;
+=======
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.feature-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 600px ;
+}
+.feature-card-container>*{
+    flex: 1 1 180px;
+}
+.feature-card{
+    border: 2px solid#cbc;
+    border-radius: 10px;
+    border-color: rgb(223, 236, 151);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.feature-card:hover{
+    border-color: rgb(198, 231, 90);
+    box-shadow: 0 4px 12px rgba(209, 239, 38,0.6);
+}
+.feature-card input[type="checkbox"]{
+    appearance: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgb(185, 225, 23);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.feature-card input[type="checkbox"]:checked{
+    border-color: rgb(108, 161, 23);
+    background-color: rgb(109, 203, 69);
+}
+.feature-card input[type="checkbox"]:checked::after{
+    content: "✓";
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff ;
+    line-height: 20px;
+}
+h4{
+    font-size: 1.3rem;
+>>>>>>> 845ced5e713ae0832da78e4d2fe13bd8933464b5
 }
